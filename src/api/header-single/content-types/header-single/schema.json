@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "header_singles",
+  "info": {
+    "singularName": "header-single",
+    "pluralName": "header-singles",
+    "displayName": "headerSingle"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

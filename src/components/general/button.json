@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_general_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "externalLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "black",
+        "white"
+      ]
+    },
+    "font": {
+      "type": "enumeration",
+      "enum": [
+        "serif",
+        "sans"
+      ]
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "sm",
+        "base",
+        "lg"
+      ]
+    },
+    "weight": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "nomal",
+        "semibold",
+        "bold"
+      ]
+    }
+  }
+}

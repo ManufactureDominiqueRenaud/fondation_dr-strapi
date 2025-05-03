@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_singles",
+  "info": {
+    "singularName": "footer-single",
+    "pluralName": "footer-singles",
+    "displayName": "footerSingle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "blocTeam": {
+      "displayName": "bloc1",
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.bloc1",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "blocContact": {
+      "displayName": "blocContact",
+      "type": "component",
+      "repeatable": false,
+      "component": "footer.bloc-contact",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    }
+  }
+}

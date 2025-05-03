@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_footer_bloc_contacts",
+  "info": {
+    "displayName": "blocContact",
+    "icon": "arrowDown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "displayName": "link",
+      "type": "component",
+      "repeatable": true,
+      "component": "general.link",
+      "required": true
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.button"
+    }
+  }
+}

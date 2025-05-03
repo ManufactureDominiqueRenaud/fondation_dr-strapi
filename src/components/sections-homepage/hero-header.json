@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_sections_homepage_hero_headers",
+  "info": {
+    "displayName": "heroHeader",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoText": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.heading"
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.paragraph"
+    },
+    "showHexagonPattern": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

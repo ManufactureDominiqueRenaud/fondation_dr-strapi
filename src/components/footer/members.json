@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_footer_members",
+  "info": {
+    "displayName": "members",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

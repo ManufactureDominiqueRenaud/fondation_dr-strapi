@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_homepage_section3_traditions",
+  "info": {
+    "displayName": "section3-tradition"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.heading"
+    },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.paragraph"
+    },
+    "showTrianglesPattern": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

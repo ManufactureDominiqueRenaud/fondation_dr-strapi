@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_homepage_section4_a_propos",
+  "info": {
+    "displayName": "section4-a_propos"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "general.heading"
+    },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.paragraph"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

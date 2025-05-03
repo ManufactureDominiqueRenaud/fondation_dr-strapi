@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_global_headers",
+  "info": {
+    "displayName": "header",
+    "icon": "arrowUp",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "showLogo": {
+      "type": "boolean",
+      "default": true
+    },
+    "showLanguageSelector": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_footer_bloc1s",
+  "info": {
+    "displayName": "blocTeam",
+    "icon": "arrowDown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "presidentZoneHeading": {
+      "type": "string",
+      "required": true
+    },
+    "presidentName": {
+      "type": "string",
+      "required": true
+    },
+    "membersZoneHeading": {
+      "type": "string",
+      "required": true
+    },
+    "members": {
+      "displayName": "members",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer.members",
+      "required": true
+    }
+  }
+}

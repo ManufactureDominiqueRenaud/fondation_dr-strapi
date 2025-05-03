@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_general_links",
+  "info": {
+    "displayName": "link",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "text",
+      "required": true
+    },
+    "link": {
+      "type": "text",
+      "required": true
+    },
+    "externalLink": {
+      "type": "boolean",
+      "default": true
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "black",
+        "white"
+      ]
+    },
+    "font": {
+      "type": "enumeration",
+      "enum": [
+        "serif",
+        "sans"
+      ]
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "xs",
+        "sm",
+        "base",
+        "lg",
+        "xl",
+        "xl2",
+        "xl3",
+        "xl4",
+        "xl5",
+        "xl6"
+      ]
+    },
+    "weight": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "nomal",
+        "semibold",
+        "bold"
+      ]
+    }
+  }
+}

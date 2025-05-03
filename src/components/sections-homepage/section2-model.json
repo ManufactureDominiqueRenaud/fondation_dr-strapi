@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_homepage_section2_models",
+  "info": {
+    "displayName": "section2-model"
+  },
+  "options": {},
+  "attributes": {
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.paragraph"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
