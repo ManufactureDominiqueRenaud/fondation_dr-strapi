@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_sections_dom_section_banners",
+  "info": {
+    "displayName": "section-banner"
+  },
+  "options": {},
+  "attributes": {
+    "is_video_banner": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "image": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "is_video_banner"
+            },
+            false
+          ]
+        }
+      },
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "iframe_link": {
+      "type": "text",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "is_video_banner"
+            },
+            true
+          ]
+        }
+      },
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "sections-dom.cta",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

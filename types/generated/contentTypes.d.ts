@@ -569,8 +569,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections-homepage.section3-tradition',
         'sections-homepage.section2-model',
         'sections-dom.section-content',
-        'sections-dom.section-title',
-        'sections-dom.section-header',
+        'sections-dom.section-banner',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

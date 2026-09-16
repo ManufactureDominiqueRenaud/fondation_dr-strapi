@@ -1,10 +1,18 @@
 {
   "collectionName": "components_sections_dom_section_contents",
   "info": {
-    "displayName": "section-content"
+    "displayName": "section-image-content"
   },
   "options": {},
   "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "content": {
       "type": "richtext",
       "required": true

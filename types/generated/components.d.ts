@@ -153,34 +153,30 @@ export interface SectionsDomCta extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsDomSectionBanner extends Struct.ComponentSchema {
+  collectionName: 'components_sections_dom_section_banners';
+  info: {
+    displayName: 'section-banner';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'sections-dom.cta', true>;
+    iframe_link: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    is_video_banner: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<false>;
+  };
+}
+
 export interface SectionsDomSectionContent extends Struct.ComponentSchema {
   collectionName: 'components_sections_dom_section_contents';
   info: {
-    displayName: 'section-content';
+    displayName: 'section-image-content';
   };
   attributes: {
     content: Schema.Attribute.RichText & Schema.Attribute.Required;
     cta: Schema.Attribute.Component<'sections-dom.cta', true>;
-  };
-}
-
-export interface SectionsDomSectionHeader extends Struct.ComponentSchema {
-  collectionName: 'components_sections_dom_section_headers';
-  info: {
-    displayName: 'section-header';
-  };
-  attributes: {
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
-  };
-}
-
-export interface SectionsDomSectionTitle extends Struct.ComponentSchema {
-  collectionName: 'components_sections_dom_section_titles';
-  info: {
-    displayName: 'section-title';
-  };
-  attributes: {
-    title: Schema.Attribute.RichText & Schema.Attribute.Required;
   };
 }
 
@@ -251,9 +247,8 @@ declare module '@strapi/strapi' {
       'general.paragraph': GeneralParagraph;
       'global.header': GlobalHeader;
       'sections-dom.cta': SectionsDomCta;
+      'sections-dom.section-banner': SectionsDomSectionBanner;
       'sections-dom.section-content': SectionsDomSectionContent;
-      'sections-dom.section-header': SectionsDomSectionHeader;
-      'sections-dom.section-title': SectionsDomSectionTitle;
       'sections-homepage.hero-header': SectionsHomepageHeroHeader;
       'sections-homepage.section2-model': SectionsHomepageSection2Model;
       'sections-homepage.section3-tradition': SectionsHomepageSection3Tradition;
