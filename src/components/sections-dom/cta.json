@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_dom_ctas",
+  "info": {
+    "displayName": "cta"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "text",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "primary",
+        "secondary"
+      ]
+    }
+  },
+  "config": {}
+}

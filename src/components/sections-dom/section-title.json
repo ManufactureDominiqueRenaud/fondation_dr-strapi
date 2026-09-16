@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_dom_section_titles",
+  "info": {
+    "displayName": "section-title"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "richtext",
+      "required": true
+    }
+  },
+  "config": {}
+}

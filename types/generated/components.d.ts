@@ -140,6 +140,40 @@ export interface GlobalHeader extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsDomCta extends Struct.ComponentSchema {
+  collectionName: 'components_sections_dom_ctas';
+  info: {
+    displayName: 'cta';
+  };
+  attributes: {
+    link: Schema.Attribute.Text & Schema.Attribute.Required;
+    text: Schema.Attribute.String & Schema.Attribute.Required;
+    type: Schema.Attribute.Enumeration<['primary', 'secondary']> &
+      Schema.Attribute.Required;
+  };
+}
+
+export interface SectionsDomSectionContent extends Struct.ComponentSchema {
+  collectionName: 'components_sections_dom_section_contents';
+  info: {
+    displayName: 'section-content';
+  };
+  attributes: {
+    content: Schema.Attribute.RichText & Schema.Attribute.Required;
+    cta: Schema.Attribute.Component<'sections-dom.cta', true>;
+  };
+}
+
+export interface SectionsDomSectionTitle extends Struct.ComponentSchema {
+  collectionName: 'components_sections_dom_section_titles';
+  info: {
+    displayName: 'section-title';
+  };
+  attributes: {
+    Title: Schema.Attribute.RichText & Schema.Attribute.Required;
+  };
+}
+
 export interface SectionsHomepageHeroHeader extends Struct.ComponentSchema {
   collectionName: 'components_sections_homepage_hero_headers';
   info: {
@@ -196,7 +230,7 @@ export interface SectionsHomepageSection4APropos
 }
 
 declare module '@strapi/strapi' {
-  export module Public {
+  export namespace Public {
     export interface ComponentSchemas {
       'footer.bloc-contact': FooterBlocContact;
       'footer.bloc1': FooterBloc1;
@@ -206,6 +240,9 @@ declare module '@strapi/strapi' {
       'general.link': GeneralLink;
       'general.paragraph': GeneralParagraph;
       'global.header': GlobalHeader;
+      'sections-dom.cta': SectionsDomCta;
+      'sections-dom.section-content': SectionsDomSectionContent;
+      'sections-dom.section-title': SectionsDomSectionTitle;
       'sections-homepage.hero-header': SectionsHomepageHeroHeader;
       'sections-homepage.section2-model': SectionsHomepageSection2Model;
       'sections-homepage.section3-tradition': SectionsHomepageSection3Tradition;

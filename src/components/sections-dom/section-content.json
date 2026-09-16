@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_dom_section_contents",
+  "info": {
+    "displayName": "section-content"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "sections-dom.cta",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
