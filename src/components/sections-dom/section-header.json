@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_dom_section_headers",
+  "info": {
+    "displayName": "section-header"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

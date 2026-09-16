@@ -164,6 +164,16 @@ export interface SectionsDomSectionContent extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsDomSectionHeader extends Struct.ComponentSchema {
+  collectionName: 'components_sections_dom_section_headers';
+  info: {
+    displayName: 'section-header';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+  };
+}
+
 export interface SectionsDomSectionTitle extends Struct.ComponentSchema {
   collectionName: 'components_sections_dom_section_titles';
   info: {
@@ -242,6 +252,7 @@ declare module '@strapi/strapi' {
       'global.header': GlobalHeader;
       'sections-dom.cta': SectionsDomCta;
       'sections-dom.section-content': SectionsDomSectionContent;
+      'sections-dom.section-header': SectionsDomSectionHeader;
       'sections-dom.section-title': SectionsDomSectionTitle;
       'sections-homepage.hero-header': SectionsHomepageHeroHeader;
       'sections-homepage.section2-model': SectionsHomepageSection2Model;
