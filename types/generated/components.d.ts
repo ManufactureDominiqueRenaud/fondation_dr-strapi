@@ -180,7 +180,7 @@ export interface SectionsDomSectionTitle extends Struct.ComponentSchema {
     displayName: 'section-title';
   };
   attributes: {
-    Title: Schema.Attribute.RichText & Schema.Attribute.Required;
+    title: Schema.Attribute.RichText & Schema.Attribute.Required;
   };
 }
 
