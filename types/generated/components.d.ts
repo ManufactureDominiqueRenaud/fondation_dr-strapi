@@ -140,46 +140,6 @@ export interface GlobalHeader extends Struct.ComponentSchema {
   };
 }
 
-export interface SectionsDomCta extends Struct.ComponentSchema {
-  collectionName: 'components_sections_dom_ctas';
-  info: {
-    displayName: 'cta';
-  };
-  attributes: {
-    link: Schema.Attribute.Text & Schema.Attribute.Required;
-    text: Schema.Attribute.String & Schema.Attribute.Required;
-    type: Schema.Attribute.Enumeration<['primary', 'secondary']> &
-      Schema.Attribute.Required;
-  };
-}
-
-export interface SectionsDomSectionBanner extends Struct.ComponentSchema {
-  collectionName: 'components_sections_dom_section_banners';
-  info: {
-    displayName: 'section-banner';
-  };
-  attributes: {
-    cta: Schema.Attribute.Component<'sections-dom.cta', true>;
-    iframe_link: Schema.Attribute.Text & Schema.Attribute.Required;
-    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
-    is_video_banner: Schema.Attribute.Boolean &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<false>;
-  };
-}
-
-export interface SectionsDomSectionContent extends Struct.ComponentSchema {
-  collectionName: 'components_sections_dom_section_contents';
-  info: {
-    displayName: 'section-image-content';
-  };
-  attributes: {
-    content: Schema.Attribute.RichText & Schema.Attribute.Required;
-    cta: Schema.Attribute.Component<'sections-dom.cta', true>;
-    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
-  };
-}
-
 export interface SectionsHomepageHeroHeader extends Struct.ComponentSchema {
   collectionName: 'components_sections_homepage_hero_headers';
   info: {
@@ -235,6 +195,47 @@ export interface SectionsHomepageSection4APropos
   };
 }
 
+export interface SectionsPageCta extends Struct.ComponentSchema {
+  collectionName: 'components_sections_page_ctas';
+  info: {
+    displayName: 'cta';
+  };
+  attributes: {
+    link: Schema.Attribute.Text & Schema.Attribute.Required;
+    text: Schema.Attribute.String & Schema.Attribute.Required;
+    type: Schema.Attribute.Enumeration<['primary', 'secondary']> &
+      Schema.Attribute.Required;
+  };
+}
+
+export interface SectionsPageSectionBanner extends Struct.ComponentSchema {
+  collectionName: 'components_sections_page_section_banners';
+  info: {
+    displayName: 'section-banner';
+  };
+  attributes: {
+    cta: Schema.Attribute.Component<'sections-page.cta', true>;
+    iframe_link: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    is_video_banner: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface SectionsPageSectionImageContent
+  extends Struct.ComponentSchema {
+  collectionName: 'components_sections_page_image-contents';
+  info: {
+    displayName: 'section-image-content';
+  };
+  attributes: {
+    content: Schema.Attribute.RichText & Schema.Attribute.Required;
+    cta: Schema.Attribute.Component<'sections-page.cta', true>;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
@@ -246,13 +247,13 @@ declare module '@strapi/strapi' {
       'general.link': GeneralLink;
       'general.paragraph': GeneralParagraph;
       'global.header': GlobalHeader;
-      'sections-dom.cta': SectionsDomCta;
-      'sections-dom.section-banner': SectionsDomSectionBanner;
-      'sections-dom.section-content': SectionsDomSectionContent;
       'sections-homepage.hero-header': SectionsHomepageHeroHeader;
       'sections-homepage.section2-model': SectionsHomepageSection2Model;
       'sections-homepage.section3-tradition': SectionsHomepageSection3Tradition;
       'sections-homepage.section4-a-propos': SectionsHomepageSection4APropos;
+      'sections-page.cta': SectionsPageCta;
+      'sections-page.section-banner': SectionsPageSectionBanner;
+      'sections-page.section-image-content': SectionsPageSectionImageContent;
     }
   }
 }

@@ -568,8 +568,8 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections-homepage.section4-a-propos',
         'sections-homepage.section3-tradition',
         'sections-homepage.section2-model',
-        'sections-dom.section-content',
-        'sections-dom.section-banner',
+        'sections-page.section-image-content',
+        'sections-page.section-banner',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

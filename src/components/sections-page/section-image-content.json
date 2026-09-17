@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_sections_dom_section_contents",
+  "collectionName": "components_sections_page_image-contents",
   "info": {
     "displayName": "section-image-content"
   },
@@ -19,7 +19,7 @@
     },
     "cta": {
       "type": "component",
-      "component": "sections-dom.cta",
+      "component": "sections-page.cta",
       "repeatable": true
     }
   },

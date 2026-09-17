@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_sections_dom_section_banners",
+  "collectionName": "components_sections_page_section_banners",
   "info": {
     "displayName": "section-banner"
   },
@@ -44,7 +44,7 @@
     },
     "cta": {
       "type": "component",
-      "component": "sections-dom.cta",
+      "component": "sections-page.cta",
       "repeatable": true
     }
   },
