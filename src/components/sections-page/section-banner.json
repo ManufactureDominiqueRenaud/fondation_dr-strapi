@@ -28,6 +28,23 @@
         "images"
       ]
     },
+    "image_mobile": {
+      "type": "media",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "is_video_banner"
+            },
+            false
+          ]
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
     "iframe_link": {
       "type": "text",
       "conditions": {

@@ -217,6 +217,7 @@ export interface SectionsPageSectionBanner extends Struct.ComponentSchema {
     cta: Schema.Attribute.Component<'sections-page.cta', true>;
     iframe_link: Schema.Attribute.Text & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    image_mobile: Schema.Attribute.Media<'images'>;
     is_video_banner: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<false>;
