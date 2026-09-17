@@ -513,7 +513,15 @@ export interface ApiHeaderSingleHeaderSingle extends Struct.SingleTypeSchema {
       'oneToMany',
       'api::header-single.header-single'
     >;
-    logo: Schema.Attribute.Media<'images' | 'files'> &
+    logo: Schema.Attribute.Media<'images'> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    logo_mobile: Schema.Attribute.Media<'images'> &
+      Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
