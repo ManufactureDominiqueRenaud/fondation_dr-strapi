@@ -527,6 +527,19 @@ export interface ApiHeaderSingleHeaderSingle extends Struct.SingleTypeSchema {
           localized: true;
         };
       }>;
+    navlink: Schema.Attribute.Component<'general.link', true> &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

@@ -40,6 +40,18 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "navlink": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "general.link",
+      "repeatable": true,
+      "required": true,
+      "min": 1
     }
   }
 }
