@@ -232,7 +232,7 @@ export interface SectionsPageSectionImageContent
   attributes: {
     content: Schema.Attribute.RichText & Schema.Attribute.Required;
     cta: Schema.Attribute.Component<'sections-page.cta', true>;
-    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
   };
 }
 
